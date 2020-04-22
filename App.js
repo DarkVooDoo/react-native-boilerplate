@@ -19,11 +19,13 @@ const Stack = createStackNavigator()
 import SongCard from './components/Index/SongCard'
 import About from './components/About/About'
 import { widthPorcentage } from './module/converSizes';
+import IndexCard from './components/Index/IndexCard';
 
 
 const Index = ({navigation})=>{
   return(
         <SafeAreaView style={styles.container}>
+          <IndexCard />
           <Text>Hello World</Text>
           <Button title='About Page' onPress={()=>navigation.navigate('About')} />
         </SafeAreaView>
